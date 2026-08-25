@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome - Sign In</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #efefef;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .card {
+    width: 100%;
+    max-width: 460px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #1a1a1a;
+  }
+  .subtitle {
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  label {
+    display: block;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .field {
+    margin-bottom: 6px;
+  }
+  input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 999px;
+    border: 2px solid #d1d5db;
+    font-size: 15px;
+    font-style: italic;
+    color: #6b7280;
+    outline: none;
+  }
+  input.error {
+    border-color: #dc2626;
+  }
+  .error-text {
+    color: #dc2626;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 14px;
+    margin: 8px 0 20px 4px;
+  }
+  .password-wrap {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .password-wrap .eye {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .forgot {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  .forgot a {
+    color: #2563eb;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .recaptcha {
+    border: 1px solid #d3d3d3;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .recaptcha-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .recaptcha input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+  .recaptcha-left span {
+    font-size: 15px;
+    color: #1a1a1a;
+  }
+  .recaptcha-badge {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 11px;
+  }
+  .recaptcha-badge .icon {
+    font-size: 26px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 2px;
+  }
+  button.signin {
+    width: 100%;
+    padding: 16px;
+    border-radius: 999px;
+    background: #163a6e;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  button.signin:hover { background: #10294e; }
+  .signup-line {
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .signup-line a {
+    color: #1a1a1a;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .notice .warn {
+    color: #f59e0b;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .notice b { color: #1a1a1a; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome</h1>
+    <p class="subtitle">Please enter your login credentials</p>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="error" placeholder="Enter your email">
+    </div>
+    <p class="error-text">Please input Email</p>
+
+    <div class="field">
+      <label for="password">Password</label>
+      <div class="password-wrap">
+        <input type="password" id="password" placeholder="Enter your password">
+        <span class="eye">&#128584;</span>
+      </div>
+    </div>
+
+    <div class="forgot"><a href="#">Forgot password?</a></div>
+
+    <div class="recaptcha">
+      <div class="recaptcha-left">
+        <input type="checkbox" id="robot">
+        <span>I'm not a robot</span>
+      </div>
+      <div class="recaptcha-badge">
+        <span class="icon">&#8635;</span>
+        reCAPTCHA
+      </div>
+    </div>
+
+    <button class="signin">SIGN IN</button>
+
+    <p class="signup-line">Don't have an account? <a href="#">Sign up</a></p>
+
+    <div class="notice">
+      <span class="warn">&#9888;</span>
+      <span>Please use <b>Google Chrome</b> or <b>Mozilla Firefox</b> for best experience.</span>
+    </div>
+  </div>
+</body>
+</html>

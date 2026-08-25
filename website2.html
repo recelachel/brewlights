@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Code Magazine - Blog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#ffffff",
+                        "background": "#fbf9f8",
+                        "secondary-container": "#7be6fd",
+                        "on-surface-variant": "#3f4849",
+                        "on-secondary-fixed": "#001f25",
+                        "primary-fixed": "#b0edef",
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-tint": "#296769",
+                        "secondary": "#006877",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-fixed-variant": "#6a3a22",
+                        "surface-container-high": "#eae8e7",
+                        "secondary-fixed": "#a4eeff",
+                        "secondary-fixed-dim": "#69d5eb",
+                        "on-primary-fixed-variant": "#054f51",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#1b1c1c",
+                        "surface": "#fbf9f8",
+                        "on-tertiary-fixed": "#341100",
+                        "tertiary-fixed-dim": "#fcb796",
+                        "on-primary-fixed": "#002021",
+                        "outline-variant": "#bfc8c8",
+                        "on-secondary-fixed-variant": "#004e5a",
+                        "inverse-primary": "#95d1d3",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dbd9d9",
+                        "on-secondary-container": "#006776",
+                        "inverse-surface": "#303030",
+                        "primary-fixed-dim": "#95d1d3",
+                        "primary": "#296769",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e4e2e2",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface-container-low": "#f5f3f3",
+                        "error": "#ba1a1a",
+                        "tertiary": "#855137",
+                        "surface-bright": "#fbf9f8",
+                        "on-background": "#1b1c1c",
+                        "outline": "#707979",
+                        "tertiary-container": "#a2694d",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#448082"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "24px",
+                        "container-max": "800px",
+                        "section-gap": "48px",
+                        "margin-page": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Work Sans", "sans-serif"],
+                        "display-lg": ["Work Sans", "sans-serif"],
+                        "meta-italic": ["Work Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Work Sans", "sans-serif"],
+                        "body-md": ["Work Sans", "sans-serif"],
+                        "body-sm": ["Work Sans", "sans-serif"],
+                        "nav-link": ["Work Sans", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "meta-italic": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["26px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "nav-link": ["16px", { "lineHeight": "1.2", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .meta-italic { font-style: italic; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container-low dark:bg-surface-container-low flex flex-col md:flex-row justify-between items-center w-full py-6 px-margin-page max-w-full flat no shadows">
+<div class="flex items-center gap-4 mb-4 md:mb-0">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="book" style="font-variation-settings: 'FILL' 1;">book</span>
+<h1 class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary-fixed-dim">The Code Magazine</h1>
+</div>
+<nav class="flex items-center gap-6">
+<a class="font-nav-link text-nav-link text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Blog</a>
+<a class="font-nav-link text-nav-link text-secondary hover:text-primary transition-colors" href="#">Challenges</a>
+<a class="font-nav-link text-nav-link text-secondary hover:text-primary transition-colors" href="#">Flexbox</a>
+<a class="font-nav-link text-nav-link text-secondary hover:text-primary transition-colors" href="#">CSS Grid</a>
+</nav>
+<button class="md:hidden mt-4 flex items-center justify-center p-2 rounded-full hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="menu">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[800px] mx-auto px-margin-page md:px-0 py-section-gap">
+<article class="flex flex-col gap-element-gap">
+<h1 class="font-display-lg text-display-lg text-primary">The Basic Language of the Web: HTML</h1>
+<div class="flex items-center gap-4">
+<img class="w-12 h-12 rounded-full object-cover border border-outline-variant" data-alt="A small square portrait photo of a professional woman with dark hair, looking directly at the camera with a neutral expression. The lighting is soft and natural, suggesting a modern office environment. The image is cropped tightly around her face, serving as an author avatar for a technical blog post." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFcrcj3H3zsB-9XlDJJZGq8WEFuqMlCtjSIMc43SvA8VD7btNGAuicvqZuKMVMZZvNk_riVlkR907VI-qEPSwTC9k7Z203bypYEror3-GqiFwBD18ap0VJvLiju1kY8NOeQ5wFXkaRoxIM3j_5uWqINPNt8C-v-GDSfZKob2lXOZUfmCNsf8B4hVwwyltVNUPRqiXV3ZQKf_THOaZ9UPYEEWMyhXeOghOgTHgDrtUZCe5eBfOPmxmpZQ"/>
+<p class="font-meta-italic text-meta-italic text-on-surface-variant meta-italic">
+                    Posted by <span class="font-bold text-on-background not-italic">Laura Jones</span> on Monday, June 21st 2027
+                </p>
+</div>
+<div class="w-full">
+<img alt="Blurred code snippet on a dark background" class="w-full h-auto object-cover rounded-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqQh3A9XuBMnJv2jqlCD8I3MSzDBlMTotB8mcGHZzFT5Z8SNJkGHPZRQ7Nzpw3GT5sZLnjMXIbjnOkBhy6pw2mtBuLpNs2eRTOx3ziQ13-GrrIRYUOuUJPhgvUdmju49mUZcrdrtZa5Hs5F4NSdmIkdRVVPUJ-aPWbuRZo-KTLZxdoq5qVM686FJaPVJugZZII0XaacKFRRU6KWxwUzzGvJbSGZW3Y-TFsF2pW45KHdA1w3q6ZqBX4SBSUlfB_HmOp_Ak"/>
+</div>
+<div class="font-body-md text-body-md text-on-surface mt-6 space-y-6">
+<p>
+                    All modern websites and web applications are built using three <i>fundamental</i> technologies: HTML, CSS and JavaScript. These are the languages of the web.
+                </p>
+<p>
+                    In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.
+                </p>
+</div>
+</article>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-dim border-t border-outline-variant w-full py-12 px-margin-page flex flex-col md:flex-row justify-between items-center mt-section-gap flat no shadows">
+<div class="mb-6 md:mb-0">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold text-primary">The Code Magazine</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">© 2027 The Code Magazine. All rights reserved.</p>
+</div>
+<nav class="flex gap-6">
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-secondary underline transition-all" href="#">Contact</a>
+</nav>
+</footer>
+</body></html>
