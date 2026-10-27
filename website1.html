@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Code Magazine</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="fonts">
+    @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+    body {
+      font-family: 'Source Serif 4', serif;
+    }
+  </style>
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#087f8c',
+            surface: '#f9f9f9',
+            onSurface: '#1a1a1a',
+            surfaceVariant: '#e1e1e1',
+            onSurfaceVariant: '#434343'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-onSurface antialiased">
+<!-- BEGIN: MainHeader -->
+<header class="border-b border-surfaceVariant py-4 px-8 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="text-3xl font-bold text-primary">📘 The Code Magazine</span>
+</div>
+<nav>
+<ul class="flex gap-6 text-primary font-medium">
+<li><a class="hover:underline" href="#">Blog</a></li>
+<li><a class="hover:underline" href="#">Challenges</a></li>
+<li><a class="hover:underline" href="#">Flexbox</a></li>
+<li><a class="hover:underline" href="#">CSS Grid</a></li>
+</ul>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
+<div class="max-w-6xl mx-auto px-8 py-12 flex flex-col md:flex-row gap-16">
+<!-- Main Article Column -->
+<main class="md:w-2/3">
+<article>
+<header class="mb-8">
+<h1 class="text-5xl font-bold text-primary mb-6 leading-tight">The Basic Language of the Web: HTML</h1>
+<div class="flex items-center gap-4 text-onSurfaceVariant italic">
+<img alt="Laura Jones avatar" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2i5zJIA6D4Vv2WpbLNLLYC80a6Ub_h-kCIBBLA1zS34ECoR-11QHv9Fsuo2bum4-zZIEBgBRsNf_XWzHOdZ9nXs7lmuK4-gI6N9-QRu-Nua-zrp1KTWbkvRydlV46B6ldefEP33jv6kQIUeYfi4CAP7zkPUXQpC9vMJevd5lBLO4yHKK7QsNGrg3Gue5ek3ImzM7H6h5vx7wGWLMvkLsMX1w2yxAyl4zStzDP-E2xFHq4pugFCuHi"/>
+<p>Posted by <span class="font-bold text-onSurface">Laura Jones</span> on Monday, June 21st 2027</p>
+</div>
+</header>
+<figure class="mb-8">
+<img alt="HTML Code snippet" class="w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg1BrEJOA4el70MZg7X6iEAxPIao4stHc6hLB7n-yyfDrMZdtEfXTn52OCXhs5uS0qZ-5s0qxOMIJOAb86Ojx-lomRfuiKHaG_oUfMcpqm5bXGDHfTSYHiX0_1le8HGnrCw1j6z56PDu-Rke7BUXY3V_8LI6OXejINyVEG6KPPZk43wgdmaXr_OfvjdPlBuQFwdmmK4CcKj4K0dssYGk_qAsaw9U_DFgioeTgQv16XanxfVWQ_CrCt"/>
+</figure>
+<div class="prose prose-lg text-onSurface max-w-none">
+<p class="mb-4">All modern websites and web applications are built using three <em>fundamental</em> technologies: HTML, CSS and JavaScript. These are the languages of the web.</p>
+<p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.</p>
+</div>
+</article>
+</main>
+<!-- Sidebar Column -->
+<aside class="md:w-1/3">
+<div class="border-t-4 border-primary pt-4">
+<h2 class="text-xl font-bold text-primary mb-6">Related Post</h2>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<img alt="Developer at desk" class="w-16 h-16 object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUro2mgDZxKWePnMPFi5soFfwIo9-Ufstk6H_UYmn2egG4fxw2k9xYcxTgMFNQSLt0yj4KrpACmknxJCHms2WFAi7CF1kh9Kh4tmcOM1WThZkffDlK4eMf6te_zj_e4mcN2n-i_qbxqfZdHfv8PPujiOoPTLbAn5aAppU3kHv9qDKNuXT6BQsQFRSnETmdztyqvZWfmKhmcg2-AZdLq364Kr5_sS6wb78JGIDw7v1NZVYIXOJXfh1Q"/>
+<div>
+<a class="text-primary font-bold hover:underline block mb-1 leading-tight" href="#">How to Learn Web Development</a>
+<span class="text-sm text-onSurfaceVariant italic">By Jonas Schmedtmann</span>
+</div>
+</li>
+<li class="flex gap-4">
+<img alt="Developer at desk" class="w-16 h-16 object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz8zR5Fclf7t8y6q3PRNk57-Hnj-BVR94LniTS1hll53PrxwmlREAv24BFoCX7_SBa9UWlpueSJS9c-1vKozs6-ouzNDf5_L-Xs3xVAqRmI8fif4q_HDnVVr9eZ7kB3wuYx_DhIwe5jIYf5TfjVX3fIitnAZoytvUwSbH9Lu1lU702Opm-78a7IncCsMBMuLaRkO_xiLRqDsT8MsMdZXnjooS48p_f1Eg6kELHVK8ZI6EmhAl7L4IR"/>
+<div>
+<a class="text-primary font-bold hover:underline block mb-1 leading-tight" href="#">The Unknown Powers of CSS</a>
+<span class="text-sm text-onSurfaceVariant italic">By Jim Dillon</span>
+</div>
+</li>
+<li class="flex gap-4">
+<img alt="Developer at desk" class="w-16 h-16 object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0o9AG1hPTI7lbSmrEjDkdgyrlz8frAtuq5lk5zVA7GUdmyojh4nLH-j0RSiesLjOpIjlgHAL23pJ0KK7kRKzwLFWWmIYjlNJHM9w5M564GEQ8h2qZ0_F5mjbZI1m96qi60KKrBTOUmwEnPj9K87coryQM9sOL6asrS1qnCiMpUo1bX5TyCtbDDYkT_USIzglvWsmLhxVKsRiNKl2mIqiEAaS-4fcmWzo9QkctnHSq9VqEXQ3wQPI"/>
+<div>
+<a class="text-primary font-bold hover:underline block mb-1 leading-tight" href="#">Why JavaScript is Awesome</a>
+<span class="text-sm text-onSurfaceVariant italic">By Matilda</span>
+</div>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+<!-- END: MainContent -->
+</body></html>

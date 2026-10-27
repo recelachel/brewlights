@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universitas Prasetiya Mulya - Login</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+    background-image: url('https://lms.prasetiyamulya.ac.id/pluginfile.php/1/theme_moove/loginbgimg/1787063519/bg_login_mdl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #c9a06a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .panel {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .left {
+    padding: 40px;
+    border-right: 1px solid #e5e5e5;
+  }
+  .right {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+  }
+  .right-inner p { margin: 0 0 16px 0; }
+  .right-inner a { color: #555; text-decoration: none; font-size: 13px; }
+  .logo-row {
+    margin-bottom: 28px;
+  }
+  .logo-row img {
+    max-width: 260px;
+    height: auto;
+    display: block;
+  }
+  .alert {
+    background: #fbe4e4;
+    color: #7a2020;
+    padding: 14px 16px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  input::placeholder { color: #999; }
+  button.login {
+    width: 100%;
+    padding: 13px;
+    background: #8a8a8a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  button.login:hover { background: #757575; }
+  .lost {
+    text-align: center;
+  }
+  .lost a {
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  @media (max-width: 700px) {
+    .panel { grid-template-columns: 1fr; }
+    .left { border-right: none; border-bottom: 1px solid #e5e5e5; }
+  }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="left">
+      <div class="logo-row">
+        <img src="https://www.prasetiyamulya.ac.id/wp-content/uploads/2020/01/prasmul_logo_2baris_rgb-2-300x93.png" alt="Universitas Prasetiya Mulya">
+      </div>
+
+      <div class="alert">Your session has timed out. Please log in again.</div>
+
+      <input type="text" value="23502510029">
+      <input type="password" placeholder="Password">
+      <button class="login">Log in</button>
+      <div class="lost"><a href="#">Lost password?</a></div>
+    </div>
+    <div class="right">
+      <div class="right-inner">
+        <p>This site best viewed in Google Chrome.</p>
+        <a href="#">&#9432; Cookies notice</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
